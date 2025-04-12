@@ -18,15 +18,15 @@
 </style>
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <?php
-        foreach ($listBanners as $key => $value):
-        ?>
-            <div class="carousel-item <?= $key == 0 ? 'active' : '' ?>">
-                <img src="uploads/<?= $value['banner_link'] ?>" class="d-block w-100" alt="Banner Image">
-            </div>
-        <?php
-        endforeach;
-        ?>
+        <div class="carousel-item active">
+            <img src="uploads/banner_1.webp" class="d-block w-100" alt="Banner Image">
+        </div>
+        <div class="carousel-item">
+            <img src="uploads/banner_3.webp" class="d-block w-100" alt="Banner Image">
+        </div>
+        <div class="carousel-item">
+            <img src="uploads/banner_4.webp" class="d-block w-100" alt="Banner Image">
+        </div>
 
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
