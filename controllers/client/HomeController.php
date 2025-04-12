@@ -15,7 +15,6 @@ class HomeController extends Controller
      }
      public function index()
      {
-          echo "index";
           $category = $this->category->select("*");
           // $listBanners = $this->banner->getAllBanner();
           $listView = $this->product->getProductFilterByView();
